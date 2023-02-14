@@ -1,1 +1,3 @@
-document.body.lastElementChild.remove();
+'use strict';
+
+setTimeout(() => document.body.lastElementChild.remove(), 1000);
