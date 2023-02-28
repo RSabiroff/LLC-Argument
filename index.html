@@ -6,6 +6,9 @@
 	<meta name="description" content="">
 	<meta name="keywords" content="">
 	<meta name="author" content="">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Playfair+Display:wght@400;700;800;900&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="icon" href="https://cdn-icons-png.flaticon.com/512/3665/3665909.png" type="image/png">
@@ -14,9 +17,164 @@
 <body>
 
 
-<div class="test">
-	Soon...
-</div>
+<header id="top" class="header">
+	<div class="header__inner">
+		<div class="header__top">
+			<div class="header__logo">
+				<div class="header__company">
+					ООО <span>"</span>Аргумент<span>"</span>
+				</div>
+				<div class="header__company-application">
+					Медицинские инструменты
+				</div>
+			</div>
+	
+			<div class="header__menu">
+				<nav class="header__menu-items">
+					<a href="#services">Услуги</a>
+					<a href="#FAQ__who-are-we">О компании</a>
+					<a href="#">Отзывы</a>
+					<a href="#">Контакты</a>
+				</nav>
+			</div>
+	
+			<div class="header__phone">
+				<a href="tel:+79170476672">+7 (917) 047 66 72</a>
+			</div>
+		</div>
+	
+		<div class="header__headline">
+			<h1>Лапароскопический инструмент для измерения анатомических структур</h1>
+		</div>
+	
+		<div class="header__button">
+			<a href="#">Оставить заявку</a>
+		</div>
+	</div>
+</header>
+
+
+<main class="main">
+	<section class="FAQ">
+		<div class="FAQ__why-choose-us">
+			<div class="FAQ__why-choose-us_bg">
+				<img src="img/whyChooseUsBG.jpg" alt="">
+			</div>
+
+			<div class="FAQ__why-choose-us_text  bullets-container">
+				<h3 class="FAQ__why-choose-us_headline">Почему нас выбирают</h3>
+				<ul class="FAQ__why-choose-us_bullets  bullets">
+					<li>Низкая себестоимость продукта</li>
+					<li>Высокая точность измерения анатомических структур</li>
+					<li>Производится из отечественного сырья и составляющих</li>
+					<li>Уникальный инструмент, не имеющий аналогов из своей группы на рынке</li>
+				</ul>
+			</div>
+		</div>
+
+		<div id="FAQ__who-are-we" class="FAQ__who-are-we">
+			<div class="FAQ__who-are-we_text">
+				<h3 class="FAQ__who-are-we_headline">Кто мы</h3>
+				<div class="FAQ__who-are-we_paragraphs">
+					<p class="FAQ__who-are-we_first-paragraph">Наша команда является победителем студенческого грантового конкурса «Студенческий стартап 2022». Так, целью старт-ап проекта «Устройство для определения анатомических размеров внутренних органов при выполнении лапароскопических операций» является занять пустующую нишу на рынке медицинского оборудования и закрыть потребность практичующих хирургов в качественном, функциональном интсрументе-линейке. Старт-ап нацелен на рентабельное производство и продажи эндоскопической линейки, а так же на дальнейшее исследование разработанного нами инструмента с целью усовершенствования механизма и развития новых проектов в сфере медицинского оборудования.</p>
+					<p class="FAQ__who-are-we_second-paragraph"></p>
+				</div>
+			</div>
+			
+			<div class="FAQ__who-are-we_bg">
+				<img src="img/whoAreWeBG.png" alt="">
+			</div>
+		</div>
+
+		<div class="FAQ__who-chooses-us">
+			<div class="FAQ__who-chooses-us_bg">
+				<img src="img/whoChoosesUsBG.png" alt="">
+			</div>
+
+			<div class="FAQ__who-chooses-us_text  bullets-container">
+				<h3 class="FAQ__who-chooses-us_headline">Кто нас выбирает</h3>
+				<ul class="FAQ__who-chooses-us_bullets  bullets">
+					<li>Медицинские ВУЗы</li>
+					<li>Государственные и негосударственные мед учреждения</li>
+					<li>Медицинские компании, занимающиеся созданием оригинальных хирургических инструментов</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+
+
+	<section id="services" class="services">
+		<div class="services__header">
+			<div class="services__decorative-line"></div>
+
+			<h2 class="services__headline">Услуги</h2>
+
+			<div class="services__decorative-line"></div>
+		</div>
+
+		<div class="services__instrument">
+			<div class="services__demonstration">
+				<div class="services__big-image">
+					<img src="img/instrument1.png" alt="">
+				</div>
+
+				<div class="services__carousel">
+					<button class="services__left-arrow  arrow"></button>
+
+					<div class="services__mini-images">
+						<div class="services__mini-images_active">
+							<img src="img/instrument1.png" alt="">
+						</div>
+						
+						<div>
+							<img src="img/instrument2.png" alt="">
+						</div>
+						
+						<div>
+							<img src="img/instrument3.png" alt="">
+						</div>
+					</div>
+
+					<button class="services__right-arrow  arrow"></button>
+				</div>
+			</div>
+
+			<div class="services__price-block-wrapper">
+				<div class="services__price-block">
+					<div class="services__price">
+						34940 ₽
+					</div>
+
+					<div class="services__delivery">
+						<div class="services__delivery-header">
+							<div class="services__delivery-icon-wrapper">
+								<img class="services__delivery-icon" src="img/services__delivery-icon.svg" alt="">
+							</div>
+
+							<h4 class="services__delivery-headline">Доставка</h4>
+						</div>
+						
+						<div class="test">
+							По г.Уфа — бесплатно
+						</div>
+
+						<div class="test">
+							По всей России — от 300 ₽
+						</div>
+					</div>
+
+					<div class="services__button-wrapper">
+						<div class="services__button">
+							<a href="#">Оставить заявку</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+</main>
+
+
 
 <script src="js/script.js"></script>
 
