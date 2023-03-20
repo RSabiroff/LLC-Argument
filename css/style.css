@@ -128,7 +128,7 @@ body {
 	height: 26px;
 	margin-top: -2px;
 	cursor: pointer;
-	/* display: none; */
+	display: none;
 }
 
 .header__burger-items {
