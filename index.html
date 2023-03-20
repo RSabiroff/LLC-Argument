@@ -17,6 +17,7 @@
 <body>
 
 
+
 <header id="top" class="header">
 	<div class="header__inner">
 		<div class="header__top">
@@ -34,7 +35,18 @@
 					<a href="#services">Услуги</a>
 					<a href="#FAQ__who-are-we">О компании</a>
 					<a href="#feedbacks">Отзывы</a>
-					<a href="#">Контакты</a>
+					<a href="#contacts">Контакты</a>
+				</nav>
+			</div>
+
+			<div class="header__burger">
+				<nav class="header__burger-items">
+					<a href="#services">Услуги</a>
+					<a href="#FAQ__who-are-we">О компании</a>
+					<a href="#feedbacks">Отзывы</a>
+					<a href="#contacts">Контакты</a>
+
+					<button class="burger__close"></button>
 				</nav>
 			</div>
 	
@@ -47,24 +59,25 @@
 			<h1 class="header__headline">Лапароскопический инструмент для измерения анатомических структур</h1>
 		</div>
 	
-		<div class="header__button">
-			<a href="#">Оставить заявку</a>
+		<div class="header__button-wrapper">
+			<button class="header__button">Оставить заявку</button>
 		</div>
 	</div>
 </header>
 
 
+
 <main class="main">
 	<section class="FAQ">
-		<div class="FAQ__why-choose-us">
+		<div id="FAQ__why-choose-us" class="FAQ__why-choose-us">
 			<div class="FAQ__why-choose-us_bg">
-				<div class="test">
-					<img src="img/whyChooseUsBG.jpg" alt="">
+				<div class="FAQ__bg">
+					<img src="img/whyChooseUsBG.jpg" alt="Команда врачей">
 				</div>
 			</div>
 
 			<div class="FAQ__why-choose-us_text  bullets-container">
-				<h3 class="FAQ__why-choose-us_headline">Почему нас выбирают</h3>
+				<h3 class="FAQ__why-choose-us_headline"><a href="#FAQ__why-choose-us">Почему нас выбирают</a></h3>
 				<ul class="FAQ__why-choose-us_bullets  bullets">
 					<li>Низкая стоимость продукта</li>
 					<li>Высокая точность измерения анатомических структур</li>
@@ -76,7 +89,7 @@
 
 		<div id="FAQ__who-are-we" class="FAQ__who-are-we">
 			<div class="FAQ__who-are-we_text">
-				<h3 class="FAQ__who-are-we_headline">Кто мы</h3>
+				<h3 class="FAQ__who-are-we_headline"><a href="#FAQ__who-are-we">Кто мы</a></h3>
 				<div class="FAQ__who-are-we_paragraphs">
 					<p class="FAQ__who-are-we_first-paragraph">Наша команда является победителем студенческого грантового конкурса «Студенческий стартап 2022». Так, целью старт-ап проекта «Устройство для определения анатомических размеров внутренних органов при выполнении лапароскопических операций» является занять пустующую нишу на рынке медицинского оборудования и закрыть потребность практичующих хирургов в качественном, функциональном интсрументе-линейке.</p>
 					<p class="FAQ__who-are-we_second-paragraph">Старт-ап нацелен на рентабельное производство и продажи эндоскопической линейки, а так же на дальнейшее исследование разработанного нами инструмента с целью усовершенствования механизма и развития новых проектов в сфере медицинского оборудования.</p>
@@ -84,21 +97,21 @@
 			</div>
 			
 			<div class="FAQ__who-are-we_bg">
-				<div class="test">
-					<img src="img/whoAreWeBG.png" alt="">
+				<div class="FAQ__bg">
+					<img src="img/whoAreWeBG.png" alt="Основатели">
 				</div>
 			</div>
 		</div>
 
-		<div class="FAQ__who-chooses-us">
+		<div id="FAQ__who-chooses-us" class="FAQ__who-chooses-us">
 			<div class="FAQ__who-chooses-us_bg">
-				<div class="test">
-					<img src="img/whoChoosesUsBG.png" alt="">
+				<div class="FAQ__bg">
+					<img src="img/whoChoosesUsBG.png" alt="Врач">
 				</div>
 			</div>
 
 			<div class="FAQ__who-chooses-us_text  bullets-container">
-				<h3 class="FAQ__who-chooses-us_headline">Кто нас выбирает</h3>
+				<h3 class="FAQ__who-chooses-us_headline"><a href="#FAQ__who-chooses-us">Кто нас выбирает</a></h3>
 				<ul class="FAQ__who-chooses-us_bullets  bullets">
 					<li>Медицинские ВУЗы</li>
 					<li>Государственные и негосударственные медицинские учреждения</li>
@@ -110,18 +123,14 @@
 
 
 	<section id="services" class="services">
-		<div class="services__header">
-			<div class="decorative-line"></div>
-
-			<h2 class="services__headline">Услуги</h2>
-
-			<div class="decorative-line"></div>
+		<div class="services__header  section__header">
+			<h2 class="services__headline  section__headline"><a href="#services">Услуги</a></h2>
 		</div>
 
 		<div class="services__instrument">
 			<div class="services__demonstration">
 				<div class="services__big-image">
-					<img src="img/instrument1.png" alt="">
+					<img src="img/instrument1.png" alt="Инструмент">
 				</div>
 
 				<div class="services__carousel">
@@ -129,15 +138,15 @@
 
 					<div class="services__mini-images">
 						<div class="services__mini-images_active">
-							<img src="img/instrument1.png" alt="">
+							<img src="img/instrument1.png" alt="Инструмент">
 						</div>
 						
 						<div>
-							<img src="img/instrument2.png" alt="">
+							<img src="img/instrument2.png" alt="Инструмент">
 						</div>
 						
 						<div>
-							<img src="img/instrument3.png" alt="">
+							<img src="img/instrument3.png" alt="Инструмент">
 						</div>
 					</div>
 
@@ -154,7 +163,7 @@
 					<div class="services__delivery">
 						<div class="services__delivery-header">
 							<div class="services__delivery-icon-wrapper">
-								<img class="services__delivery-icon" src="img/services__delivery-icon.svg" alt="">
+								<img class="services__delivery-icon" src="img/services__delivery-icon.svg" alt="Иконка доставки">
 							</div>
 
 							<h4 class="services__delivery-headline">Доставка</h4>
@@ -171,7 +180,7 @@
 
 					<div class="services__button-wrapper">
 						<div class="services__button">
-							<a href="#">Оставить заявку</a>
+							<button class="services__button-inner">Оставить заявку</button>
 						</div>
 					</div>
 				</div>
@@ -181,18 +190,14 @@
 
 
 	<section id="feedbacks" class="feedbacks">
-		<div class="feedbacks__header">
-			<div class="decorative-line"></div>
-
-			<h2 class="feedbacks__headline">Отзывы</h2>
-
-			<div class="decorative-line"></div>
+		<div class="feedbacks__header  section__header">
+			<h2 class="feedbacks__headline  section__headline"><a href="#feedbacks">Отзывы</a></h2>
 		</div>
 
 		<div class="feedbacks__cards">
 			<div class="feedbacks__card">
 				<div class="card__photo">
-					<img class="card__photo-1" src="img/Sigal.jpg" alt="">
+					<img class="card__photo-1" src="img/Sigal.jpg" alt="Врач">
 				</div>
 
 				<div class="card__name">
@@ -216,7 +221,7 @@
 
 			<div class="feedbacks__card">
 				<div class="card__photo">
-					<img class="card__photo-2" src="img/Bakirov.jpg" alt="">
+					<img class="card__photo-2" src="img/Bakirov.jpg" alt="Врач">
 				</div>
 
 				<div class="card__name">
@@ -240,7 +245,7 @@
 
 			<div class="feedbacks__card">
 				<div class="card__photo">
-					<img class="card__photo-3" src="img/Anischenko.jpg" alt="">
+					<img class="card__photo-3" src="img/Anischenko.jpg" alt="Врач">
 				</div>
 
 				<div class="card__name">
@@ -258,7 +263,46 @@
 				</div>
 
 				<div class="card__quotation">
-					<p>Механизм с подвижными браншами, позиционирование под любым углом от 0° до 90°, градуированная шкала измерительной части устройства от 0 до 10 сантиметров. Всё это делает инструмент удобным в использовании.</p>
+					<p>Механизм с подвижными браншами, позиционирование под любым углом от 0° до 90°, градуированная шкала измерительной части устройства от 0 до 6 сантиметров. Всё это делает инструмент удобным в использовании.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<section id="partners" class="partners">
+		<div class="partners__header  section__header">
+			<h2 class="partners__headline  section__headline"><a href="#partners">Наши партнёры</a></h2>
+		</div>
+
+		<div class="partners__main">
+			<div class="partners__BSMU  partner">
+				<div class="partners__logo">
+					<img src="img/IF4.png" alt="Логотип ФСИ">
+				</div>
+
+				<div class="partners__text">
+					<p><b>Фонд содействия инновациям.</b> Фонд содействия развитию малых форм предприятий в научно-технической сфере — государственная некоммерческая организация в форме федерального государственного бюджетного учреждения, образованная в соответствии с постановлением Правительства Российской Федерации от 3 февраля 1994 г. №65.</p>
+				</div>
+			</div>
+
+			<div class="partners__MFS  partner">
+				<div class="partners__logo">
+					<img src="img/MFS2.png" alt="Логотип МФС">
+				</div>
+
+				<div class="partners__text">
+					<p><b>Научно-производственная фирма.</b> Была основана высококвалифицированными специалистами ещё в 2003 году. Работая в тесном сотрудничестве с ведущими российскими хирургами, разрабатывает, производит и реализует полный спектр эндохирургического оборудования.</p>
+				</div>
+			</div>
+
+			<div class="partners__IF  partner">
+				<div class="partners__logo">
+					<img src="img/BSMU.png" alt="Логотип БГМУ">
+				</div>
+
+				<div class="partners__text">
+					<p><b>ВО БГМУ Минздрава РФ.</b> Федеральное государственное бюджетное образовательное учреждение высшего образования «Башкирский государственный медицинский университет» Министерства здравоохранения Российской Федерации. ТОП-100 лучших вузов России (RAEX-100, 2022 год).</p>
 				</div>
 			</div>
 		</div>
@@ -266,7 +310,59 @@
 </main>
 
 
+
+<footer class="footer">
+	<div class="footer__main-wrapper">
+		<div id="contacts" class="footer__main">
+			<div class="footer__map">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4743.240587834702!2d55.95114634025857!3d54.725369924830055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x43d93a448969e9f9%3A0xf03adf48d8a1453c!2z0YPQuy4g0KfQtdGA0L3Ri9GI0LXQstGB0LrQvtCz0L4sIDEwNCwg0KPRhNCwLCDQoNC10YHQvy4g0JHQsNGI0LrQvtGA0YLQvtGB0YLQsNC9LCA0NTAwNzc!5e0!3m2!1sru!2sru!4v1678384539974!5m2!1sru!2sru" width="450" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+			</div>
+	
+			<div class="footer__contacts-wrapper">
+				<ul class="footer__contacts">
+					<li><h2 class="contacts__headling">Контакты</h2></li>
+					<li><a href="tel:+79170476672">+7 (917) 047 66 72</a></li>
+					<li><a href="mailto:dimon.gal77@mail.ru">dimon.gal77@mail.ru</a></li>
+					<li>г. Уфа, ул. Чернышевского 104, кв. 119</li>
+					<li>450077</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<div class="footer__copyright">
+		2023 © Все права защищены.
+	</div>
+</footer>
+
+
+
+<div class="popup-wrapper">
+	<div class="popup">
+		<form class="form" action="">
+			<input class="popup__user-data" type="text" name="" placeholder="ФИО">
+
+			<input class="popup__user-data" type="text" name="" placeholder="Город">
+
+			<input class="popup__user-data" type="email" name="" placeholder="Почта">
+	
+			<input class="popup__send" type="submit" value="Отправить">
+		</form>
+
+		<button class="popup__close"></button>
+	</div>
+</div>
+
+
+
+<div class="to-top-wrapper">
+	<a class="to-top" href="#top"></a>
+</div>
+
+
+
 <script src="js/script.js"></script>
+
 
 
 </body>
