@@ -8,7 +8,7 @@
 	<meta name="author" content="">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Playfair+Display:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Playfair+Display:wght@400;500;600;700;800;900&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="icon" href="https://cdn-icons-png.flaticon.com/512/3665/3665909.png" type="image/png">
@@ -79,10 +79,21 @@
 			<div class="FAQ__why-choose-us_text  bullets-container">
 				<h3 class="FAQ__why-choose-us_headline"><a href="#FAQ__why-choose-us">Почему нас выбирают</a></h3>
 				<ul class="FAQ__why-choose-us_bullets  bullets">
-					<li>Низкая стоимость продукта</li>
-					<li>Высокая точность измерения анатомических структур</li>
-					<li>Производится из отечественного сырья и составляющих</li>
-					<li>Уникальный инструмент, не имеющий аналогов из своей группы на рынке</li>
+					<div class="bullet">
+						<img src="img/scalpel.svg" alt="Иконка скальпеля"><li>Низкая стоимость продукта</li>
+					</div>
+
+					<div class="bullet">
+						<img src="img/scalpel.svg" alt="Иконка скальпеля"><li>Высокая точность измерения анатомических структур</li>
+					</div>
+					
+					<div class="bullet">
+						<img src="img/scalpel.svg" alt="Иконка скальпеля"><li>Производится из отечественного сырья и составляющих</li>
+					</div>
+					
+					<div class="bullet">
+						<img src="img/scalpel.svg" alt="Иконка скальпеля"><li>Уникальный инструмент, не имеющий аналогов из своей группы на рынке</li>
+					</div>
 				</ul>
 			</div>
 		</div>
@@ -113,9 +124,17 @@
 			<div class="FAQ__who-chooses-us_text  bullets-container">
 				<h3 class="FAQ__who-chooses-us_headline"><a href="#FAQ__who-chooses-us">Кто нас выбирает</a></h3>
 				<ul class="FAQ__who-chooses-us_bullets  bullets">
-					<li>Медицинские ВУЗы</li>
-					<li>Государственные и негосударственные медицинские учреждения</li>
-					<li>Медицинские компании, занимающиеся созданием оригинальных хирургических инструментов</li>
+					<div class="bullet">
+						<img src="img/scalpel.svg" alt="Иконка скальпеля"><li>Медицинские ВУЗы</li>
+					</div>
+
+					<div class="bullet">
+						<img src="img/scalpel.svg" alt="Иконка скальпеля"><li>Государственные и негосударственные медицинские учреждения</li>
+					</div>
+
+					<div class="bullet">
+						<img src="img/scalpel.svg" alt="Иконка скальпеля"><li>Медицинские компании, занимающиеся созданием оригинальных хирургических инструментов</li>
+					</div>
 				</ul>
 			</div>
 		</div>
@@ -339,12 +358,12 @@
 
 <div class="popup-wrapper">
 	<div class="popup">
-		<form class="form" action="">
-			<input class="popup__user-data" type="text" name="" placeholder="ФИО">
+		<form class="form" action="thanks.php" method="post">
+			<input class="popup__user-data" type="text" name="name" placeholder="ФИО">
 
-			<input class="popup__user-data" type="text" name="" placeholder="Город">
+			<input class="popup__user-data" type="text" name="email" placeholder="Город">
 
-			<input class="popup__user-data" type="email" name="" placeholder="Почта">
+			<input class="popup__user-data" type="email" name="phone" placeholder="Почта">
 	
 			<input class="popup__send" type="submit" value="Отправить">
 		</form>
