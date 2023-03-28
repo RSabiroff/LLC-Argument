@@ -23,8 +23,8 @@
 a {
 	text-decoration: none;
 	color: inherit;
+	font-weight: inherit;
 }
-/* a:hover { text-decoration: underline; } */
 
 b {
 	font-weight: 700;
@@ -44,6 +44,11 @@ img {
 	object-fit: cover;
 }
 
+/* ????????????????????????????????????????????????? */
+nav {
+	font-weight: inherit;
+}
+
 .img_contain {
 	object-fit: contain;
 }
@@ -61,6 +66,8 @@ body {
 
 	max-width: 1536px;
 	margin: 0 auto;
+
+	/* position: relative; */
 }
 
 .header {
@@ -81,12 +88,12 @@ body {
 }
 
 .header__logo {
-
+	font-family: 'Roboto Slab', serif;
 }
 
 .header__company {
 	font-size: 35px;
-	letter-spacing: 3px;
+	letter-spacing: 4px;
 }
 .header__company span {
 	letter-spacing: 0;
@@ -106,6 +113,8 @@ body {
 .header__menu,
 .header__phone {
 	font-size: 26px;
+	font-family: 'Roboto Slab', serif;
+	/* font-weight: 400; */
 }
 
 .header__menu-items {
@@ -133,7 +142,7 @@ body {
 
 .header__burger-items {
 	position: absolute;
-	z-index: 4;
+	z-index: 12;
 	top: 0;
 	left: 50%;
 	transform: translateX(-50%);
@@ -175,7 +184,11 @@ body {
 .header__headline {
 	font-size: 58px;
 	font-family: 'Playfair Display', serif;
-	font-weight: 600;
+	font-weight: 900;
+
+	/* font-family: 'Roboto Slab', serif;
+	font-weight: 500; */
+
 	text-transform: uppercase;
 }
 
@@ -233,6 +246,8 @@ body {
 	margin: 23px 0;
 	font-size: 52px;
 	text-transform: uppercase;
+	font-family: 'Roboto Slab', serif;
+	font-weight: 400;
 }
 
 .FAQ__why-choose-us {
@@ -281,7 +296,7 @@ body {
 }
 
 .FAQ__why-choose-us_headline {
-
+	
 }
 
 .FAQ__why-choose-us_bullets {
@@ -297,11 +312,22 @@ body {
 	flex-direction: column;
 	justify-content: space-between;
 	height: 100%;
-	padding-left: 32px;
-	list-style: url(../img/scalpel.svg);
+	/* padding-left: 32px; */
+	
 
-	font-size: 40px;
+	font-size: 39px;
 	/* text-shadow: 10px 10px 10px black; */
+}
+
+.bullet {
+	display: flex;
+}
+
+.bullet img {
+	width: 37px;
+	height: 37px;
+	transform: translateY(9px);
+	margin-right: 16px;
 }
 
 .bullets li {
@@ -784,11 +810,15 @@ body {
 
 .popup-wrapper {
 	position: fixed;
-	z-index: 3;
+	z-index: 11;
 	top: 0;
 	left: 0;
-	height: 100vh;
 	width: 100vw;
+	height: 100vh;
+
+	/* max-width: 1536px;
+	max-height: 714px; */
+
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -801,7 +831,9 @@ body {
 .popup {
 	width: 35vw;
 	height: 35vw;
-	border-radius: 31px;
+	/* max-width: 537.6px; */
+	/* max-height: 537.6px; */
+	border-radius: 2vw;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -819,19 +851,19 @@ body {
 }
 
 .popup__user-data {
-	height: 65px;
-	width: 257.1px;
-	border-radius: 34px;
-	padding: 0 7px 0 27px;
-	padding-left: 27px;
-	font-size: 27px;
+	height: 4.2vw;
+	width: 16.7vw;
+	border-radius: 2.2vw;
+	padding: 0 0.5vw 0 1.8vw;
+	padding-left: 1.8vw;
+	font-size: 1.8vw;
 }
 
 .popup__send {
-	height: 70px;
-	width: 358px;
-	border-radius: 15px;
-	font-size: 40px;
+	height: 4.5vw;
+	width: 23.3vw;
+	border-radius: 1vw;
+	font-size: 2.6vw;
 	font-weight: 800;
 	
 	background-color: #64FFE4;
@@ -847,10 +879,10 @@ body {
 
 .popup__close {
 	position: absolute;
-	top: 13px;
-	right: 13px;
-	width: 35px;
-	height: 35px;
+	top: 0.8vw;
+	right: 0.8vw;
+	width: 2.3vw;
+	height: 2.3vw;
 	background: url(../img/cross4.svg);
 	background-size: cover;
 	cursor: pointer;
@@ -858,7 +890,7 @@ body {
 
 .to-top-wrapper {
 	position: fixed;
-	z-index: 2;
+	z-index: 10;
 	bottom: 16px;
 	right: 16px;
 	width: 40px;
