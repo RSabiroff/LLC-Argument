@@ -71,7 +71,7 @@ body {
 }
 
 .header {
-	background: url(../img/headerBG.png) center center no-repeat;
+/* 	background: url(../img/headerBG.png) center center no-repeat; */
 	height: 100vh;
 	max-height: 714px;
 }
