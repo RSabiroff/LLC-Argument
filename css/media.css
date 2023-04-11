@@ -1,0 +1,7 @@
+@charset "utf-8";
+
+/* @media (max-width: 1536px) {
+	:root {
+		font-size: calc(5px + (10 - 5) * ((100vw - 768px) / (1536 - 768)));
+	}
+}  */
