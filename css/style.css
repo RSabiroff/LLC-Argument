@@ -892,8 +892,8 @@ body {
 }
 
 .popup {
-	width: 35vw;
-	height: 35vw;
+	width: 35vmax;
+	height: 35vmax;
 	/* max-width: 537.6px; */
 	/* max-height: 537.6px; */
 	border-radius: 2vw;
