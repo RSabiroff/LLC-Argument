@@ -886,9 +886,12 @@ body {
 	/* max-width: 1536px;
 	max-height: 714px; */
 
-	display: flex;
+
+	/* display: flex;
 	justify-content: center;
-	align-items: center;
+	align-items: center; */
+
+
 	/* background-color: #000000D4; */
 	background-color: #000000E9;
 	/* background-color: #FFFFFF7F; */
@@ -898,6 +901,9 @@ body {
 .popup {
 	width: 35vmax;
 	height: 35vmax;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 	/* max-width: 537.6px; */
 	/* max-height: 537.6px; */
 	border-radius: 1.107em;
