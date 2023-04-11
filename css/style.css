@@ -902,7 +902,7 @@ body {
 	width: 35vmax;
 	height: 35vmax;
 
-	top: 50%;
+	top: 50vh;
 	left: 50%;
 	transform: translate(-50%, -50%);
 
