@@ -81,10 +81,11 @@ body {
 	font-size: 2.6rem;
 
 
-	background: url(../img/headerBG10.png) center center no-repeat;
+	background: url(../img/headerBG10.webp) center center no-repeat;
 	background-size: cover;
 	height: 100vh;
 	height: calc(100vh + 0.231em);
+	/* height: 100vh; */
 	max-height: 27.462em;
 	max-height: 27.693em;
 }
@@ -174,7 +175,7 @@ body {
 	justify-content: space-evenly;
 	align-items: center;
 	cursor: default;
-	background-color: white;
+	background-color: #FFFFFF;
 	display: none;
 }
 
@@ -205,7 +206,7 @@ body {
 .header__headline {
 	
 	font-family: 'Playfair Display', serif;
-	font-weight: 900;
+	font-weight: 700;
 
 	/* font-family: 'Roboto Slab', serif;
 	font-weight: 500; */
@@ -228,8 +229,8 @@ body {
 
 	font-weight: 400;
 
-	border: 4px black solid;
-	border: 0.111em black solid;
+	border: 4px #000000 solid;
+	border: 0.111em #000000 solid;
 
 	border-radius: 1.657em;
 	overflow: hidden;
@@ -239,14 +240,14 @@ body {
 	background-color: transparent;
 	
 	text-transform: uppercase;
-	color: black;
+	color: #000000;
 	transition: background-color 0.5s, color 0.5s, font-weight 0.3s;
 }
 .header__button-wrapper:hover {
 	background-color: var(--accent-color);
 	/* border-color: var(--accent-color); */
-	/* border-color: black; */
-	/* color: black; */
+	/* border-color: #000000; */
+	/* color: #000000; */
 	font-weight: 900;
 }
 
@@ -315,7 +316,7 @@ body {
 	max-width: 64.511em;
 	max-height: 64.511em;
 	box-shadow: 0 0 4em rgba(0,0,0,0.55);
-	/* outline: 10px solid gray; */
+	/* outline: 10px solid #808080; */
 }
 
 .FAQ__why-choose-us_text {
@@ -348,7 +349,7 @@ body {
 	
 
 	
-	/* text-shadow: 10px 10px 10px black; */
+	/* text-shadow: 10px 10px 10px #000000; */
 }
 
 .bullet {
@@ -471,7 +472,7 @@ body {
 	padding: 0 0.960em;
 	text-align: center;
 	text-transform: uppercase;
-	background-color: white;
+	background-color: #FFFFFF;
 }
 
 .services__instrument {
@@ -540,7 +541,11 @@ body {
 }
 
 .services__mini-images_active {
-	border-color: green !important;
+	/* border-color: green !important; */
+	/* border-color: #0094FF !important; */
+	/* border-color: var(--accent-color) !important; */
+	border-color: #000000 !important;
+	border-color: #808080 !important;
 }
 
 .services__right-arrow {
@@ -561,7 +566,7 @@ body {
 	top: 50%;
 	left: 0px;
 	transform: translateY(-53%);
-	background-color: gray;
+	background-color: #808080;
 }
 
 .services__price-block {
@@ -611,7 +616,6 @@ body {
 	flex-grow: 1;
 	display: flex;
 	flex-direction: column-reverse;
-	
 	padding-bottom: 2.35em;
 }
 
@@ -624,7 +628,10 @@ body {
 	align-items: center;
 	
 	width: 100%;
-	height: 1.725em;
+	
+	height: 60px;
+	height: 2.068em;
+	border-radius: 0.241em;
 	background-color: var(--accent-color);
 }
 
@@ -663,7 +670,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	/* border: 1px solid gray; */
+	/* border: 1px solid #808080; */
 	text-align: center;
 
 	box-shadow: 0 0 0.555em rgba(0,0,0,0.55);
@@ -687,12 +694,12 @@ body {
 }
 
 .card__photo-2 {
-	object-position: 0% 80%;
-	scale: 1.5;
+	object-position: 0% 0%;
+	scale: 1.42;
 }
 
 .card__photo-3 {
-	object-position: 0% 8%;
+	object-position: 0% 9%;
 }
 
 .card__name {
@@ -701,6 +708,8 @@ body {
 
 .card__who-is {
 	min-height: 4.278em;
+	/* display: flex;
+	flex-direction: column; */
 }
 
 .card__profession {
@@ -713,6 +722,11 @@ body {
 
 	margin-top: 0.25em;
 	padding: 0 2.166em;
+
+	/* flex-basis: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center; */
 }
 
 .card__quotation {
@@ -807,13 +821,13 @@ body {
 }
 
 .footer__main-wrapper {
-	background-color: black;
+	background-color: #000000;
 	height: calc(100vh + 4em);
 	max-height: 28.607em;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	color: white;
+	color: #FFFFFF;
 }
 
 .footer__main {
@@ -832,7 +846,7 @@ body {
 }
 
 .footer__map {
-	background-color: white;
+	background-color: #FFFFFF;
 }
 .footer__map iframe {
 	width: 19.724em;
@@ -887,9 +901,9 @@ body {
 	max-height: 714px; */
 
 
-	/* display: flex;
+	display: flex;
 	justify-content: center;
-	align-items: center; */
+	align-items: center;
 
 
 	/* background-color: #000000D4; */
@@ -901,11 +915,6 @@ body {
 .popup {
 	width: 35vmax;
 	height: 35vmax;
-
-	top: 50vh;
-	left: 50%;
-	transform: translate(-50%, -50%);
-
 	/* max-width: 537.6px; */
 	/* max-height: 537.6px; */
 	border-radius: 1.107em;
@@ -947,7 +956,7 @@ body {
 	background-color: #28C700;
 
 	background-color: var(--accent-color);
-	color: white;
+	color: #FFFFFF;
 
 	cursor: pointer;
 }

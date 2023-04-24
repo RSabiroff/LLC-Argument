@@ -1,46 +1,48 @@
 <?php
 
-ini_set('display_errors','On');
-error_reporting('E_ALL');
+$to = 'rashid.sabirov.2001@mail.ru';
+$name = clear_data($_POST['name']);
+$city = clear_data($_POST['city']);
+$email = clear_data($_POST['email']);
+$subject = 'ЗАКАЗ ИНСТРУМЕНТА';
 
-$to = 'rashid.sabirov.2001@mail.ru'; // Адреса, куда будут приходить письма. две почты указываем через запятую
-$sitename = $_SERVER['SERVER_NAME'];
+// $headers = "From: no-reply@instrument-laparo.ru\r\n";
+// $headers .= "Reply-To: no-reply@instrument-laparo.ru\r\n";
+// $headers .= "Content-type: text/html; charset=utf-8\r\n";
 
-if (isset($_POST['phone']) && !empty($_POST['phone']))
-{
-    $phone  = strip_tags($_POST['phone']);
-    $name  = strip_tags($_POST['name']);
-    $email  = strip_tags($_POST['email']);
-    $message  = strip_tags($_POST['message']);
+$headers = [
+  "From" => "no-reply@instrument-laparo.ru",
+  "Reply-To" => "no-reply@instrument-laparo.ru",
+  "Content-type" => "text/html; charset=utf-8"
+];
 
-// Формирование заголовка письма
-    $subject  = "[Zajavka s sajta ".$sitename."]";
-    $headers  = "From: mail@".$sitename." \r\n";
-    $headers .= "MIME-Version: 1.0\r\n";
-    $headers .= "Content-Type: text/html;charset=utf-8 \r\n";
-// Формирование тела письма
-    $msg  = "<html><body style='font-family:Arial,sans-serif;'>";
-    $msg .= "<h2 style='font-weight:bold;border-bottom:1px dotted #ccc;'>Новая заявка:</h2>\r\n";
-    if(isset($_POST['name']) && !empty($_POST['name'])){
-      $msg .= "<p><strong>Имя:</strong> ".$name."</p>\r\n";
-    }
-    if(isset($_POST['phone']) && !empty($_POST['phone'])){
-      $msg .= "<p><strong>Телефон:</strong> ".$phone."</p>\r\n";
-    }
-    if(isset($_POST['email']) && !empty($_POST['email'])){
-      $msg .= "<p><strong>E-mail:</strong> ".$email."</p>\r\n";
-    }
-    if(isset($_POST['message']) && !empty($_POST['message'])){
-      $msg .= "<p><strong>Сообщение:</strong> ".$message."</p>\r\n";
-    }
-    $msg .= "</body></html>";
-// отправка сообщения
-    mail($to, $subject, $msg, $headers);
+// $message = 'Имя: ' . $name . "\n" . 'Email: ' . $email . "\n" . 'Сообщение: ' . $text . "\n";
+$message = '
+  <html>
+  <body>
+    <center>
+      <table border="1" cellpading="6" sellspacing="0" width="90%" border-color="#DBDBDB">
+        <tr> <td align="center" bgcolor="#E4E4E4"> <b>ФИО</b> </td> <td align="center" bgcolor="#E4E4E4">'. $name .'</td> </tr>
+        <tr> <td align="center" bgcolor="#E4E4E4"> <b>Город</b> </td> <td align="center" bgcolor="#E4E4E4">'. $city .'</td> </tr>
+        <tr> <td align="center" bgcolor="#E4E4E4"> <b>Email</b> </td> <td align="center" bgcolor="#E4E4E4">'. $email .'</td> </tr>
+      </table>
+    </center>
+  </body>
+  </html>
+';
+
+function clear_data($val) {
+  $val = trim($val);
+  $val = stripslashes($val);
+  $val = htmlspecialchars($val);
+
+  return $val;
 }
-else
-{
-    echo "Заявка не отправлена :(";
-}
+
+if (isset($_POST['submit'])) {
+  mail($to, $subject, $message, $headers);
+};
+
 ?>
 <!DOCTYPE html>
 <html>
@@ -130,19 +132,16 @@ else
 
 <body>
   <div class='thankyou'>
-
     <h1 class="thankyou__title">Спасибо, заявка принята!</h1>
-    <p>
-      Оператор свяжется с Вами в течение 15 минут </p>
-    <img class="thankyou__divider" src="img-ty-page/thankyou-divider.png">
-    <p class="thankyou__notice">Вы ввели следующие данные:</p>
-    <p class="thankyou__notice">Телефон: <?php echo $phone;?></p>
-    <p class="thankyou__notice">Если Вы допустили ошибку, вернитесь на страницу заказа и отправьте форму еще раз</p>
 
+    <p>Мы напишем Вам в ближайшее время.</p>
+    <p class="thankyou__notice">Вы ввели следующие данные:</p>
+    <p class="thankyou__notice">ФИО: <?php echo $name;?></p>
+    <p class="thankyou__notice">Город: <?php echo $city;?></p>
+    <p class="thankyou__notice">Email: <?php echo $email;?></p>
+    <p class="thankyou__notice">Если Вы допустили ошибку, пожалуйста, вернитесь и отправьте заявку ещё раз.</p>
 
     <button class="button" onclick="history.go(-1);">Вернуться</button>
-    <img class="thankyou__image" src="img-ty-page/thankyou-girl.png">
   </div>
 </body>
-
 </html>
